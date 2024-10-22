@@ -171,7 +171,7 @@ def obter_registro():
         if resultado:
             for result in resultado:
                 if tabela == 'fornecedor':
-                    # Supondo que a ordem das colunas seja: id_fornecedor, nome, telefone, email, id_endereco
+                    
                     ra.append({
                         "id_fornecedor": result[0],
                         "nome": result[1],
@@ -180,7 +180,7 @@ def obter_registro():
                         "id_endereco": result[4]
                     })
                 elif tabela == 'equipamento':
-                    # Supondo que a ordem das colunas seja: id_equipamento, nome, preco, quantidade
+                    
                     ra.append({
                         "id_equipamento": result[0],
                         "nome": result[1],
@@ -188,7 +188,7 @@ def obter_registro():
                         "quantidade": result[3]
                     })
                 elif tabela == 'fornece_equipamento':
-                    # Supondo que a ordem das colunas seja: id_equipamento, id_fornecedor, data_fornecimento
+                    
                     ra.append({
                         "id_equipamento": result[0],
                         "id_fornecedor": result[1],
